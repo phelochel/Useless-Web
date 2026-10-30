@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="EXPORT" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205.61 87.56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b1b1bb;
+      }
+
+      .cls-2 {
+        fill: #c9c9c9;
+      }
+
+      .cls-3 {
+        fill: #dcdfe4;
+      }
+
+      .cls-4 {
+        fill: #a1a1a1;
+      }
+
+      .cls-5 {
+        fill: #8b8b8c;
+      }
+    </style>
+  </defs>
+  <g id="DONE">
+    <g id="pepper">
+      <path class="cls-1" d="M165.92,70.54c-.25,0-.5,0-.75-.03l-99.46-7.03V24.23l99.45-7.18c.26-.02.51-.03.77-.03,5.38,0,9.75,4.06,9.75,9.04v35.43c0,2.42-1.02,4.7-2.87,6.41-1.84,1.7-4.29,2.64-6.88,2.64h0Z"/>
+      <path class="cls-3" d="M165.46,66.91l-95.86-6.78V27.57l95.85-6.92c3.41-.25,6.32,2.25,6.32,5.42v35.43c0,3.16-2.91,5.66-6.31,5.42Z"/>
+      <path class="cls-5" d="M165.46,20.65l-77.11,5.57v35.25l77.12,5.45c3.4.24,6.31-2.25,6.31-5.42V26.06c0-3.17-2.91-5.66-6.32-5.42Z"/>
+      <path class="cls-3" d="M37.67,63.47V24.34s-7.74,1.33-7.74,19.56,7.74,19.56,7.74,19.56Z"/>
+      <polygon class="cls-2" points="65.04 26.75 37.67 24.34 37.67 63.47 65.04 60.7 65.04 26.75"/>
+      <rect class="cls-1" x="61.23" y="22.24" width="8.38" height="43.1" rx="1.64" ry="1.64"/>
+      <g>
+        <ellipse class="cls-4" cx="33.47" cy="51.49" rx=".79" ry="2.33" transform="translate(-6.4 4.78) rotate(-7.45)"/>
+        <ellipse class="cls-4" cx="33.47" cy="35.93" rx="2.33" ry=".79" transform="translate(-6.5 64.46) rotate(-82.55)"/>
+        <ellipse class="cls-4" cx="33.22" cy="43.71" rx=".79" ry="2.32" transform="translate(-.73 .56) rotate(-.96)"/>
+      </g>
+    </g>
+  </g>
+</svg>

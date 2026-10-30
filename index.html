@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Organize the Drawer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <header class="topbar">
+    <button class="restart" id="restart" type="button">
+      <span class="restart-icon" aria-hidden="true">&#x21BB;</span>
+      <span>RESTART</span>
+    </button>
+
+    <h1>Organize the Drawer</h1>
+
+    <div class="stats">
+      <div>SCORE: <span id="score">0</span>/11</div>
+      <div>TIME: <span id="time">0:00.0</span></div>
+    </div>
+  </header>
+
+  <main class="stage">
+    <!--
+      Everything inside .drawer is positioned in % of the drawer,
+      so the whole thing scales together. (Responsive design)
+      Layer order (bottom to top): drawer -> zones -> places -> utensils
+    -->
+    <div class="drawer" id="drawer">
+
+      <img class="drawer-bg" src="images/drawer.svg" alt="" draggable="false">
+
+      <!-- 2. Zones: the dark compartment blocks -->
+      <img class="zone measuringcup" src="images/measuringcupzone.svg" alt="" draggable="false">
+      <img class="zone rollingpin" src="images/rollingpinzone.svg" alt="" draggable="false">
+      <img class="zone spatula" src="images/spatulazone.svg" alt="" draggable="false">
+      <img class="zone slottedspoon" src="images/slottedspoonzone.svg" alt="" draggable="false">
+      <img class="zone cutter" src="images/cutterzone.svg" alt="" draggable="false">
+      <img class="zone scooper" src="images/scooperzone.svg" alt="" draggable="false">
+      <img class="zone pepper" src="images/pepperzone.svg" alt="" draggable="false">
+      <img class="zone ketchup" src="images/ketchupzone.svg" alt="" draggable="false">
+      <img class="zone timer" src="images/timerzone.svg" alt="" draggable="false">
+      <img class="zone knife" src="images/knifezone.svg" alt="" draggable="false">
+      <img class="zone measuringspoons" src="images/measuringspoonszone.svg" alt="" draggable="false">
+
+      <!-- 3. Places: the utensil outlines -->
+      <img class="place measuringcup" src="images/measuringcupplace.svg" alt="" draggable="false">
+      <img class="place rollingpin" src="images/rollingpinplace.svg" alt="" draggable="false">
+      <img class="place spatula" src="images/spatulaplace.svg" alt="" draggable="false">
+      <img class="place slottedspoon" src="images/slottedspoonplace.svg" alt="" draggable="false">
+      <img class="place cutter" src="images/cutterplace.svg" alt="" draggable="false">
+      <img class="place scooper" src="images/scooperplace.svg" alt="" draggable="false">
+      <img class="place pepper" src="images/pepperplace.svg" alt="" draggable="false">
+      <img class="place ketchup" src="images/ketchupplace.svg" alt="" draggable="false">
+      <img class="place timer" src="images/timerplace.svg" alt="" draggable="false">
+      <img class="place knife" src="images/knifeplace.svg" alt="" draggable="false">
+      <img class="place measuringspoons" src="images/measuringspoonsplace.svg" alt="" draggable="false">
+
+      <!-- 4. Utensils: start cluttered on the light sides. data-name is how JS will match them to a zone later -->
+      <img class="utensil measuringcup" data-name="measuringcup" src="images/measuringcup.svg" alt="Measuring cup"
+        draggable="false">
+      <img class="utensil rollingpin" data-name="rollingpin" src="images/rollingpin.svg" alt="Rolling pin"
+        draggable="false">
+      <img class="utensil spatula" data-name="spatula" src="images/spatula.svg" alt="Spatula" draggable="false">
+      <img class="utensil slottedspoon" data-name="slottedspoon" src="images/slottedspoon.svg" alt="Slotted spoon"
+        draggable="false">
+      <img class="utensil cutter" data-name="cutter" src="images/cutter.svg" alt="Pizza cutter" draggable="false">
+      <img class="utensil scooper" data-name="scooper" src="images/scooper.svg" alt="Scooper" draggable="false">
+      <img class="utensil pepper" data-name="pepper" src="images/pepper.svg" alt="Pepper shaker" draggable="false">
+      <img class="utensil ketchup" data-name="ketchup" src="images/ketchup.svg" alt="Ketchup packet" draggable="false">
+      <img class="utensil timer" data-name="timer" src="images/timer.svg" alt="Timer" draggable="false">
+      <img class="utensil knife" data-name="knife" src="images/knife.svg" alt="Knife" draggable="false">
+      <img class="utensil measuringspoons" data-name="measuringspoons" src="images/measuringspoons.svg"
+        alt="Measuring spoons" draggable="false">
+
+      <button class="drawer-handle" id="drawer-handle" type="button" aria-label="Drag to open or close the drawer"
+        title="Drag to open or close the drawer"></button>
+    </div>
+  </main>
+
+  <canvas class="confetti" id="confetti" aria-hidden="true"></canvas>
+
+  <section class="completion-overlay" id="completion" role="dialog" aria-modal="true" aria-labelledby="completion-title"
+    hidden>
+    <div class="completion-card">
+      <button class="completion-close" id="completion-close" type="button"
+        aria-label="Close completion dialog">&times;</button>
+      <h2 id="completion-title">DRAWER<br>ORGANIZED!</h2>
+      <p class="completion-message">Nice work, everything is finally in its place.</p>
+      <div class="completion-times">
+        <p><span>Your time</span><strong id="completion-time">0:00.0</strong></p>
+        <p><span>Personal best</span><strong id="personal-best">0:00.0</strong></p>
+      </div>
+      <p class="completion-record" id="completion-record" hidden>New personal best!</p>
+      <button class="play-again" id="play-again" type="button">TRY AGAIN</button>
+    </div>
+  </section>
+
+</body>
+
+</html>

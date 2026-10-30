@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="EXPORT" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 915">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #af6d6d;
+      }
+
+      .cls-2 {
+        fill: #f6f6f6;
+      }
+
+      .cls-3 {
+        fill: #a06565;
+      }
+
+      .cls-4 {
+        fill: #c18e68;
+      }
+
+      .cls-5 {
+        fill: #aeaeae;
+      }
+
+      .cls-6 {
+        fill: #fbce95;
+      }
+    </style>
+  </defs>
+  <g id="drawer_artboard10" data-name="drawer artboard10">
+    <g id="drawer">
+      <rect class="cls-6" x="37.17" y="-.47" width="1846.82" height="837.91"/>
+      <rect id="front" class="cls-2" y="837.44" width="1920" height="38.93" rx="7.85" ry="7.85"/>
+      <path id="handle" class="cls-5" d="M1084.53,876.36v13.53c0,5.8-6.2,10.5-13.85,10.5h-221.37c-7.65,0-13.85-4.7-13.85-10.5v-13.53h-24.07v13.31c0,14.25,15.24,25.79,34.03,25.79h229.15c18.79,0,34.03-11.55,34.03-25.79v-13.31h-24.07Z"/>
+      <rect class="cls-4" x="80.88" y="-.47" width="1758.23" height="837.91"/>
+      <rect class="cls-6" x="112.71" y="-.47" width="1695.74" height="837.91"/>
+    </g>
+    <g id="placement_board" data-name="placement board">
+      <rect class="cls-3" x="408.42" y="-.47" width="1103.17" height="837.91"/>
+      <rect class="cls-1" x="427.22" y="13.81" width="1065.56" height="809.35" rx="6.22" ry="6.22"/>
+    </g>
+  </g>
+</svg>
